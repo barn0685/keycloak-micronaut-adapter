@@ -47,9 +47,9 @@ public class KeycloakPublicKeyService implements PublicKeyService {
             @Value("${keycloak.realm-id}") String realmId,
             @Value("${keycloak.eager-load-public-keys}") Boolean eagerLoadPublicKeys
      ) throws MalformedURLException {
-        if (baseUrl == null || baseUrl.isEmpty()) {
-            throw new IllegalArgumentException("Property keycloak.base-url (string) must be defined");
-        }
+        // if (baseUrl == null || baseUrl.isEmpty()) {
+           // throw new IllegalArgumentException("Property keycloak.base-url (string) must be defined");
+        // }
         if (realmId == null || realmId.isEmpty()) {
             throw new IllegalArgumentException("Property keycloak.realm-id (string) must be defined");
         }
